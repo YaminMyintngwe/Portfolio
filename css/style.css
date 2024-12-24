@@ -1,12 +1,24 @@
 @font-face {
-	font-family: 'Poppins';
-	src: url("../fonts/Poppins-Regular.woff") format("woff");
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans-Regular.woff") format("woff");
     font-weight: normal;
 }
 
 @font-face {
-	font-family: 'Poppins';
-	src: url("../fonts/Poppins-Bold.woff") format("woff");
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans-Bold.woff") format("woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Regular.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Bold.woff") format("woff");
     font-weight: bold;
 }
 
@@ -17,11 +29,11 @@
 }
 
 body {
-	font-family: 'Poppins'; 
-	font-size: 16px;
+	font-family: 'OpenSans'; 
+	font-size: 14px;
 	color: #5B5B5B;
 	min-height: 100vh;
-    padding-top: 85px;
+    /* padding-top: 85px; */
 }
 
 .navbar {
@@ -40,66 +52,21 @@ body {
     background: #fff;
 }
 
-.social-link{
-    margin-top: 25px;
-    list-style: none;
-}
-
-.social-link li {
-    display: inline-block;
-    margin-right: 12px;
-}
-
-.social-link li a {
-    color: #fff;
-    border: 1px solid #73B2E1;
-    background-color: #73B2E1;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    display: inline-block;
-    font-size: 18px;
-    transition: .5s;
-}
-
-.about-section-title {
-    position: relative;
-    padding-bottom: 20px;
-}
-
-.about-section-title::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    background: #207561;
-    width: 50px;
-}
-.personal-info span {
+.navbar-light .navbar-nav .nav-link.active {
     font-weight: bold;
-    display: inline-block;
-    width: 25%;
+    color: #5C98E3;
 }
 
-.download-button {
-    border-radius: 40px;
-    background-color: #73B2E1;
-    border: none;
-    padding: 15px;
+.home-section {
+    background-color: #F1F5FE;
 }
 
-.section-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #73B2E1;
-    padding-bottom: 25px;
+.experience-section {
+    margin-top: 40px;
 }
 
 .experience-section-wrap {
-    background-color: #EDF4F9;
+    background-color: #F9F9F9;
     padding: 50px 0;
 }
 
@@ -112,7 +79,7 @@ body {
     display: block;
     width: 1px;
     height: 100%;
-    background: #73B2E1;
+    background: #5C98E3;
     position: absolute;
     left: 35%;
     top: 0;
@@ -127,7 +94,7 @@ body {
     height: 30px;
     width: 30px;
     line-height: 4.8rem;
-    background: #73B2E1;
+    background: #5C98E3;
     border-radius: 50%;
     text-align: center;
     color: #FFFFFF;
@@ -141,7 +108,7 @@ body {
     height: 20px;
     width: 20px;
     border: 3px solid #fff;
-    background-color: #73B2E1;
+    background-color: #5C98E3;
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -157,10 +124,10 @@ body {
 }
 
 .timeline-header h3 {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     font-size: 18px;
     font-weight: bold;
-    color: #73B2E1;
+    color: #5C98E3;
 }
 
 .timeline-content {
@@ -171,10 +138,10 @@ body {
 
 .timeline-content h3 {
     position: relative;
-    padding-bottom: 15px;
+    padding-bottom: 8px;
     font-size: 18px;
     font-weight: bold;
-    color: #73B2E1;
+    color: #5C98E3;
 }
 
 @media screen and (max-width: 768px) {
@@ -214,61 +181,237 @@ body {
     border-radius: 8px;
 }
 
-.skill-icon {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #fff;
-    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Start Index page*/
+.main-img img {
+    width: 360px;
+    height: 369px;
+    object-fit: contain;
 }
 
-.skill-icon img {
-    width: 50px;
-    height: 50px;
+.my-photo img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
 }
 
-.git-button {
-    background-color: #5B5B5B;
-    border-radius: 8px;
-    padding: 10px 15px;
-}
-
-.demo-button {
-    background-color: #73B2E1;
-    border-radius: 8px;
-    padding: 10px 15px;
-    color: #fff;
-}
-
-.card {
-    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-}
-
-.card-title {
-    font-size: 18px;
+.title {
+    font-family: 'Montserrat' !important;
     font-weight: bold;
-    color: #73B2E1;
+    font-size: 24px;
+    color: #5C98E3;
 }
 
-.card-body button img {
-    width: 20px;
-    height: 20px;
+.text-justify {
+    text-align: justify;
+}
+
+.contact-section {
+    margin-bottom: 60px;
+}
+
+.icon-text-wrapper {
+    display: flex; 
+    align-items: center; 
+    gap: 4px; 
+}
+
+.icon-text-wrapper .circle {
+    border: 1px solid #5b5b5b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-text-wrapper .circle i {
+    font-size: 8px;
+    columns: #5b5b5b;
+}
+
+.icon-text-wrapper p {
+    margin: 0;
+}
+
+.contact-title, .education-title {
+    font-family: 'Montserrat' !important;
+    font-weight: bold;
+    font-size: 20px;
+    color: #5C98E3;
+}
+
+.education-text-wrapper {
+    margin-bottom: 12px;
+}
+
+.education-text-wrapper p {
+    margin: 0;
+}
+
+.text-small {
+    font-size: 12px;
+    color: #5c98E3;
+}
+
+.common-button {
+    background: #5C98E3;
+    border-radius: 16px;
+}
+
+.common-button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.my-skills {
+    padding-top: 40px;
+}
+
+.my-skills img, .project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.project-card {
+    padding: 32px;
+    box-shadow: 0px 24px 100px rgba(91, 91, 91, 0.25);
+    border-radius: 12px;
+}
+
+.project-card h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 32px;
 }
 
 .footer {
-    background-color: #73B2E1;
-    width: 100%;
-    padding: 15px;
+    border-top: 1px solid rgba(91, 91, 91, 0.5);
+    padding: 32px 0;
 }
-.footer img {
-    width: 50px;
-    height: 50px;
+.footer-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #5C98E3;
+    border-bottom: 1px dashed #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 14px;
 }
 
-#home-section, #about-section, #experience-section, #skill-section, #project-section {
-    margin-bottom: 100px;
-} 
+.footer-icon i {
+    color: #fff;
+    font-size: 20px;
+}
+
+/* End Index Page*/
+
+/* Start Recipe App Case Study */
+.case-study-title {
+    font-family: 'Montserrat' !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #006D77;
+}
+
+.tool-used h3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.app-title, .sub-title{
+    font-family: 'Montserrat' !important;
+    font-weight: bold;
+    font-size: 34px;
+    color: #006D77;
+}
+
+.sub-title {
+    font-size: 20px !important;
+}
+
+.title-border {
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.title-border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: #207561;
+    width: 100px;
+}
+
+.card {
+    background-color: #EDF6F9;
+    border: none;
+    box-shadow: none;
+    border-radius: 12px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5b5b5b;
+
+}
+
+.card-body {
+    padding: 12px;
+}
+
+.design-process img, .user-personas img, .user-stories img, 
+.user-flow img, .paper-sketch img, .mid-fi img, 
+.mood-board img, .visual-design img, .style-guide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.btn-outline {
+    border: 1px solid #006D77;
+    border-radius: 8px;
+}
+
+.btn-outline a {
+    text-decoration: none;
+    color: #006D77;
+    font-size: 12px;
+}
+
+.btn-outline:focus {
+    box-shadow: none;
+}
+
+.mood-board img { 
+    border-radius: 4px;
+}
+
+.mood-board {
+    box-shadow: 0px 2px 2px rgba(91, 91, 91, 0.25);
+    border: 1px solid rgba(91, 91, 91, 0.25);
+    border-radius: 4px;
+}
+.prototype-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #006D77;
+}
+
+.prototype-section {
+    background-color: #EDF6F9;
+    padding: 24px 72px;
+}
+
+.prototype-section a {
+    font-weight: bold;
+    color: #006D77;
+}
+/* End Recipe App Case Study */
