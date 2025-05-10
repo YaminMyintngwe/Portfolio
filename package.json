@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "minify-html": "html-minifier --input-dir src/public --output-dir dist --collapse-whitespace",
+    "minify-css": "cleancss -o src/public/styles.min.css src/public/styles.css",
+    "build": "npm run minify-html && npm run minify-css && npm run start"
+  },
+  "author": "yaminmyintngwe",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
