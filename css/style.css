@@ -234,7 +234,7 @@ body {
     margin: 0;
 }
 
-.contact-title, .education-title {
+.contact-title, .education-title, .skills-title {
     font-family: 'Montserrat' !important;
     font-weight: bold;
     font-size: 20px;
@@ -269,10 +269,14 @@ body {
     padding-top: 40px;
 }
 
-.my-skills img, .project-card img {
+.project-card img {
     width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+.design-skills-section ul {
+    padding-left: 14px;
 }
 
 .project-card {
@@ -281,10 +285,11 @@ body {
     border-radius: 12px;
 }
 
-.project-card h4 {
+.project-card .project-title {
+    font-family: 'Montserrat' !important;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 32px;
+    margin-bottom: 12px;
 }
 
 .footer {
@@ -415,3 +420,14 @@ body {
     color: #006D77;
 }
 /* End Recipe App Case Study */
+
+
+@media (max-width: 768px) { 
+    .about-section .common-button {
+        margin-bottom: 24px;
+    }
+
+    .project-card .project-title {
+        margin-top: 24px;
+    }
+ }

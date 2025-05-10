@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans-Bold.woff") format("woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Regular.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Bold.woff") format("woff");
+    font-weight: bold;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'OpenSans'; 
+	font-size: 14px;
+	color: #5B5B5B;
+	min-height: 100vh;
+    /* padding-top: 85px; */
+}
+
+
+
+.main-title {
+    font-family: 'Montserrat' !important;
+    font-size: 32px;
+    font-weight: bold;
+    color: #1E1E24;
+}
+
+.sub-title {
+    font-family: 'Montserrat' !important;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1E1E24;
+}
+
+
+.main-section {
+    padding: 50px 72px 0px 0px;
+}
+
+.problem-statement, .problem-solutions {
+    display: flex;
+}
+
+.problem-statement .problem-icon {
+    color: #F5A18F;
+    font-size: 20px;
+    margin-right: 4px;
+}
+
+.problem-solutions .solution-icon {
+    color: #D7DDB8;
+    font-size: 20px;
+    margin-right: 4px;
+}
+
+.design-process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wireframes-section .wireframes , .visual-design-section .visual-design {
+    background-color: #E6E6E6;
+    padding: 16px;
+}
+
+.prototype-section P {
+    margin-bottom: 0px;
+}
+
+.prototype-section P a {
+    font-weight: bold;
+    color: #5B5B5B;
+}
+ 
+.footer {
+    border-top: 1px solid rgba(91, 91, 91, 0.5);
+    padding: 32px 0;
+}
+.footer-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #5C98E3;
+    border-bottom: 1px dashed #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 14px;
+}
+
+.footer-icon i {
+    color: #fff;
+    font-size: 20px;
+}
