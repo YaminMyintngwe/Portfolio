@@ -10,6 +10,10 @@ app.get('/recipe-app', (req, res) => {
   res.sendFile(path.join(__dirname, 'public','recipe-app.html'));
 });
 
+app.get('/fashion-website', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public','fashion-website.html'));
+});
+
 // Define a route for file download
 app.get('/download', (req, res) => {
   // Specify the path to the resume.pdf file
