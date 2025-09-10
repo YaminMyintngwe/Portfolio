@@ -373,7 +373,8 @@ body {
     border-radius: 24px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     padding: 20px;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card img {
@@ -381,14 +382,19 @@ body {
     height: 200px;
     width: 100%;
     border-radius: 0.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .project-title {
     font-size: 18px;
     font-weight: bold;
     color: #242A41;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.project-description {
+    flex-grow: 1;
+    margin-bottom: 20px;
 }
 
 .btn-read-case-study {
@@ -396,6 +402,7 @@ body {
     border: 1px solid #345995;
     border-radius: 25px;
     padding: 4px 16px;
+    align-self: flex-start;
 }
 
 .btn-read-case-study a {
