@@ -38,21 +38,19 @@ body {
     padding: 60px 0; */
 }
 
-/* Customizing the standard Bootstrap navbar */
 .navbar-custom {
-    max-width: 560px;
-    width: 100%;
+    width: fit-content;
+    width: 540px;
     background-color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 50px; /* Use a higher value for a pill shape */
+    border-radius: 50px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    margin: auto; /* Center the navbar */
     top: 22px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
 }
-
-.navbar-custom .nav-item {
-    padding-right: 40px;
-} 
 
 .navbar-custom .nav-link {
     padding: 0.5rem 1.25rem;
@@ -65,25 +63,10 @@ body {
     position: relative;
 }
 
-.navbar-custom .nav-link.active::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0.2rem;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 2px;
-    background-color: #6C4EE2; 
-    border-radius: 2px;
-}
 
  .navbar-custom .nav-link:hover {
     color: #6C4EE2;
 }
-
-/* .navbar-toggler {
-    display: none;
-} */
 
 .navbar-collapse.collapse.show .navbar-nav {
     display: flex;
@@ -94,6 +77,9 @@ body {
     color: #6C4EE2;
 }
 
+.navbar-toggler:focus {
+    box-shadow: none;
+}
 /* end custom nav bar */
 
 
@@ -107,10 +93,6 @@ body {
     background-color: #F7F3FF;
     padding: 86px 82px 64px;
 }
-
-/* .profile-intro {
-    padding:122px 0px 64px;
-} */
 
 .greeting {
     display: flex;
@@ -192,10 +174,6 @@ body {
     background-color: #F9FBFD;
     padding: 64px 82px;
 }
-
-/* .eduction-section .education {
-    padding: 44px 100px;
-} */
 
 .heading {
     font-family: 'Montserrat';
@@ -427,7 +405,25 @@ body {
 
 
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* @media (min-width: 768px) and (max-width: 991.98px) {
+    .home-section {
+         padding: 50px 40px 30px;
+    }
+    .about-me-section, .eduction-section, .skills-section, 
+    .projects-section {
+        padding: 30px 40px;
+    }
+} */
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar-custom {
+        width: 400px;
+    }
+
+    .main-title {
+        font-size: 40px;
+    }
+
     .home-section {
          padding: 50px 40px 30px;
     }
@@ -437,7 +433,15 @@ body {
     }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 480px) {
+    .navbar-custom {
+        width: 380px;
+    }
+
+    .main-title {
+        font-size: 32px;
+    }
+
     .home-section {
          padding: 42px 20px 20px;
     }
