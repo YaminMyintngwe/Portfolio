@@ -30,7 +30,7 @@
 
 body {
 	font-family: 'OpenSans'; 
-	font-size: 14px;
+	font-size: 16px;
 	color: #5B5B5B;
 	min-height: 100vh;
 }
@@ -39,7 +39,6 @@ body {
 /* Start Recipe App Case Study */
 .case-study-title {
     font-family: 'Montserrat' !important;
-    text-align: center;
     font-weight: bold;
     font-size: 24px;
     color: #006D77;
@@ -50,23 +49,28 @@ body {
     font-size: 18px;
 }
 
-.app-title, .sub-title{
+.app-title {
     font-family: 'Montserrat' !important;
     font-weight: bold;
     font-size: 34px;
     color: #006D77;
+    margin-bottom: 0;
+    margin-left: 8px;
 }
 
 .sub-title {
+    font-family: 'Montserrat' !important;
+    font-weight: bold;
     font-size: 20px !important;
+    color: #006D77;
 }
 
-.title-border {
+/* .title-border {
     position: relative;
     padding-bottom: 6px;
-}
+} */
 
-.title-border::after {
+/* .title-border::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -74,7 +78,7 @@ body {
     height: 3px;
     background: #207561;
     width: 100px;
-}
+} */
 
 .card {
     background-color: #EDF6F9;
@@ -117,15 +121,6 @@ body {
     box-shadow: none;
 }
 
-.mood-board img { 
-    border-radius: 4px;
-}
-
-.mood-board {
-    box-shadow: 0px 2px 2px rgba(91, 91, 91, 0.25);
-    border: 1px solid rgba(91, 91, 91, 0.25);
-    border-radius: 4px;
-}
 .prototype-title {
     font-size: 20px;
     font-weight: bold;
